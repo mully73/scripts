@@ -1,10 +1,10 @@
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
 
-local UI = GUI:CreateWindow("Tower of Hell","lyme#0001")
+local UI = GUI:CreateWindow("Legend Hub","lyme#0001 and cim#1111")
 
 local Home = UI:addPage("Home",1,true,6)
 
-Home:addLabel("Tower of Hell","by lyme#0001")
+Home:addLabel("Tower of Hell","by lyme#0001 and cim#1111")
 
 
 
@@ -25,4 +25,13 @@ LP:addLabel("Main","Main Page for Tower of Hell")
 LP:addButton("TP To End",function()
    local Ch = game.Players.LocalPlayer.Character
 Ch:MoveTo(workspace.tower.sections.finish.start.Position)
+end)
+LP:addButton("Disable Anti-Cheat",function()
+    loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/notivahiqa.md"))()
+end)
+LP:addButton("Get All Tools",function()
+    loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/suwetulaje.lua"))()
+end)
+LP:addButton("GodMode",function()
+    loadstring(game:HttpGet("https://www.toptal.com/developers/hastebin/raw/xarozekuwe.lua"))()
 end)
