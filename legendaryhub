@@ -1,0 +1,99 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("Legend Hub")
+
+local serv = win:Server("Legendary RPG", "")
+
+local btns = serv:Channel("Swords")
+
+btns:Button(
+    "Get Vilethorn Sword",
+    function()
+        local ohString1 = "Buy"
+local ohNumber2 = 0
+local ohString3 = "Vilethorn"
+
+game:GetService("Players").LocalPlayer.RemoteFunctions.SwordShopSystem:FireServer(ohString1, ohNumber2, ohString3)
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "Get Frostbrand",
+    function()
+        local ohString1 = "Buy"
+local ohNumber2 = 0
+local ohString3 = "Frostbrand"
+
+game:GetService("Players").LocalPlayer.RemoteFunctions.SwordShopSystem:FireServer(ohString1, ohNumber2, ohString3)
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "Get Steel Sword",
+    function()
+        local ohString1 = "Buy"
+local ohNumber2 = 0
+local ohString3 = "Steel"
+
+game:GetService("Players").LocalPlayer.RemoteFunctions.SwordShopSystem:FireServer(ohString1, ohNumber2, ohString3)
+    end
+)
+
+local tgls = serv:Channel("Rebirth")
+
+tgls:Button(
+    "Max Rebirth",
+    function()
+        local ohNumber1 = 25
+
+game:GetService("Players").LocalPlayer.RemoteFunctions.RebirthFunction:FireServer(ohNumber1)
+
+    end
+)
+
+local sldrs = serv:Channel("Money")
+
+sldrs:Button(
+    "Infinite Money",
+    function()
+       local ohString1 = "Sell"
+local ohNumber2 = 10000000000000
+local ohString3 = "Vilethorn"
+
+game:GetService("Players").LocalPlayer.RemoteFunctions.SwordShopSystem:FireServer(ohString1, ohNumber2, ohString3)
+    end
+)
+
+
+local drops = serv:Channel("Misc")
+
+drops:Button(
+    "Admin Commands",
+    function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+)
+
+
+local clrs = serv:Channel("Settings")
+
+clrs:Button(
+    "lyme#0001",
+    function()
+      print("credits")
+    end
+)
+
+clrs:Button(
+    "cim#1111",
+    function()
+      print("credits")
+    end
+)
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
