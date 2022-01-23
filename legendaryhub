@@ -1,7 +1,19 @@
+if game.PlaceId == 60654525 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Legend Hub";
+	Text = "by lyme and cm";
+	Duration = 5;
+	--Callback here
+	Button1 = "ok";
+	Button2 = "stfu";
+})
 local DiscordLib =
     loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
 
 local win = DiscordLib:Window("Legend Hub")
+
 
 local serv = win:Server("Legendary RPG", "")
 
@@ -96,4 +108,36 @@ clrs:Button(
     end
 )
 
-win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+
+
+end
+
+if game.PlaceId == 1962086868 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Legend Hub";
+	Text = "by lyme and cm";
+	Duration = 5;
+	--Callback here
+	Button1 = "ok";
+	Button2 = "stfu";
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mully73/scripts/main/towerofhell"))()
+end
+
+if game.PlaceId == 4603902269 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Legend Hub";
+	Text = "by lyme and cm";
+	Duration = 5;
+	--Callback here
+	Button1 = "ok";
+	Button2 = "stfu";
+})
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/mully73/scripts/main/adoptandraise"))()
+end
+
+
