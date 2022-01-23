@@ -1,0 +1,28 @@
+local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
+
+local UI = GUI:CreateWindow("Tower of Hell","lyme#0001")
+
+local Home = UI:addPage("Home",1,true,6)
+
+Home:addLabel("Tower of Hell","by lyme#0001")
+
+
+
+
+
+
+
+-- Just an example of how you would actually use it i guess
+
+local LP = UI:addPage("Main",2,false,6)
+
+-- Label
+
+LP:addLabel("Main","Main Page for Tower of Hell")
+
+--- Button
+
+LP:addButton("TP To End",function()
+   local Ch = game.Players.LocalPlayer.Character
+Ch:MoveTo(workspace.tower.sections.finish.start.Position)
+end)
