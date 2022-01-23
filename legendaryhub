@@ -140,4 +140,18 @@ CoreGui:SetCore("SendNotification", {
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/mully73/scripts/main/adoptandraise"))()
 end
 
+if game.PlaceId == 1417427737 then
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Legend Hub";
+	Text = "by lyme and cm";
+	Duration = 5;
+	--Callback here
+	Button1 = "ok";
+	Button2 = "stfu";
+})
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/mully73/scripts/main/miningsim"))()
+end
+
 
