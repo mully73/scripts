@@ -1,0 +1,29 @@
+local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
+
+local UI = GUI:CreateWindow("Adopt and Raise","lyme#0001 AND cim#1111")
+
+local Home = UI:addPage("Home",1,true,6)
+
+Home:addLabel("Adopt and Raise","by lyme#0001")
+
+
+
+
+
+
+
+-- Just an example of how you would actually use it i guess
+
+local LP = UI:addPage("Main",2,false,6)
+
+-- Label
+
+LP:addLabel("Main","by lyme#0001 and cim#1111")
+
+--- Button
+
+LP:addButton("Infinite Money",function()
+   local ohNumber1 = 7500000000000000
+
+game:GetService("ReplicatedStorage").money:FireServer(ohNumber1)
+end)
